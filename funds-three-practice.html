@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Functions Practice</title>
+</head>
+<body>
+    <script>
+        function add7(num){
+            let sum;
+            sum = num + 7;
+            return sum;
+        }
+        console.log(add7(2));
+
+        function multiply(a,b){
+            let product;
+            product = a * b;
+            return product;
+        }
+        console.log(multiply(3,5));
+
+        function capitalize(inputString){
+            let lower = inputString.toLowerCase(); // Make string all lower case.
+            return lower.charAt(0).toUpperCase() + lower.slice(1);
+        }
+        console.log(capitalize('hiTHEREbuddy'));
+
+        function lastLetter(inputString){
+            const string = inputString;
+            const len = string.length;
+            let last = string.charAt(len-1);
+            return last;
+        }
+        console.log(lastLetter('Hell'));
+    </script>
+</body>
+</html>
